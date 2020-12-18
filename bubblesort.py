@@ -1,6 +1,8 @@
 def bubblesort(arr):
-  for i in range(n):
-    for j in range(n-i-1):
-      if arr[j] > arr[j+1]:
-        arr[j], arr[j+1] = arr[j+1], arr[j]
+  for passnum in range(len(arr)-1, 0, -1) #Outer loop to make sure pass repeats for all numbers.
+    for i in range(passnum):
+      if arr[i] > arr[i+1]:
+        arr[i], arr[i+1] = arr[i+1], arr[i]
   return arr
+    
+          
